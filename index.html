@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Thilina Methsahan 2023 Shedule</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Heebo:300" rel="stylesheet">
+
+<link rel="stylesheet" href="dist/style.css">
+
+<link rel="shortcut icon" href="dist/Assests/favicon.png">
+<STYLE>
+  #time {
+  font-size: 8em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  margin-left: -15px;
+  padding: 0;
+}
+
+#date {
+  font-size: 2.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  margin-top: -0.6em;
+/*   padding-left: 0.4em; */
+}
+</STYLE>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+<!-- partial:index.partial.html -->
+<div class="box">
+
+<a href="#" class='btn show-prompt-box myButton'>
+<p>
+  
+   
+   
+    <span class=time id="clock"></span>
+  
+ 
+ </p>
+ </a>
+ 
+ 
+ 
+ <div class="overlay">
+  <nav class='tbar'>
+    <i class="fas fa-wifi"></i>
+    <div class=time id="clock"></div>
+  </nav>
+   
+   <div class='content'>
+     <div class='input-wrap'>
+       <div class='pic'></div>
+       <div class='wrap'>
+         <h3 class='name'>Thilina Methsahan</h3>
+       </div>
+       <input type='password' id='password' placeholder='Enter Password' autocomplete='off'>
+       <button class='arrow'><i class="fas fa-arrow-right"></i>
+       </button>
+     </div>
+    
+
+     </main>
+   </div>
+
+ </div>
+     
+     </div>
+ 
+ <script>
+   $(function() {
+   var btn = $(".btn");
+   
+   btn.on("click", function() {
+     
+     $(this).addClass('btn-progress');
+     setTimeout(function() {
+       btn.addClass('btn-fill')
+     }, 500);
+     
+     setTimeout(function() {
+       btn.removeClass('btn-fill')
+     }, 4100);
+     
+     setTimeout(function() {
+       btn.addClass('btn-complete')
+     }, 4100);
+   
+   });
+ })
+ </script>
+ <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="dist/script.js"></script>
+ 
+
+
+<script>
+  var span = document.getElementById('clock');
+
+function time() {
+  var d = new Date();
+
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+}
+
+setInterval(time, 1000);
+</script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="dist/script.js"></script>
+<script>
+  //Password protect form page
+(function() {
+
+//Display modal on click
+$('.show-prompt-box').click(function(e){
+  e.preventDefault();
+  $('.overlay, .prompt-box, .prompt-wrap').slideDown();
+});
+
+
+
+//Get value and compare to password
+$('.prompt-box form').submit(function(e) {
+  e.preventDefault();
+  var codeWord = $('.clients').val();
+
+
+  if (codeWord == "thilina2022") {
+
+    alert('Verification Sucess');
+    location.href = "profile/index.html";
+
+} else {
+    alert('Verification Faild')
+    $('.code-error').addClass('is-error');
+    $('.prompt-box').addClass('shake');
+    setTimeout(function() {
+        $('.prompt-box').removeClass('shake')
+    }, 1000);
+
+}
+});
+
+})();
+</script>
+
+<script>
+  <script>
+  var span = document.getElementById('lockclock');
+
+function time() {
+  var d = new Date();
+
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+}
+
+setInterval(time, 1000);
+</script>
+</script>
+<script src="dist/pre.js"></script>
+</body>
+</html>
