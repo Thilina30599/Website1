@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Timetable 2022</title>
+<style>
+.tbar {
+  
+  font-size: 12px;
+  display: flex;
+ 
+  justify-content: flex-end;
+  
+}
+
+.tbar > i, .tbar > .time{
+  padding-right: 8px;
+  position: fixed;
+}
+
+.percent {
+  padding-right: 5px;
+}
+</style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="Assests/time.png" type="image/x-icon">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta charset="UTF-8">
+  <title>Time Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<nav class='tbar'>
+    <i class="fas fa-wifi"></i>
+    <span class=time id="clock">My Time</span>
+  </nav>
+  
+
+
+<section class="home">
+<div class="container">
+  <div class="box shadow1" title="Monday">
+    <hr width="35%" align="left"><h1>Monday</h1><hr width="35%" align="left">
+    <time>
+      04:20</time>  <font>Wake Up</font> <input type="radio">
+    <hr>
+    <time>
+    04:30-05:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    06:30-13:30</time> <font>School</font><input  type="radio">
+    <hr>
+    <time>
+    15:30-16:30</time> <font>HomeWorks</font><input type="radio">
+    <hr>
+    <time>
+    16:30-18:30</time> <font>Rest</font><input type="radio">
+    <hr>
+    <time>
+    18:30-19:30</time> <font>Studying History</font><input type="radio">
+    <hr>
+    <time>
+    22:00-04:20</time> <font>Sleep</font>
+    <hr>
+  </div>
+  <div class="box shadow2" title="Tuesday">
+        <hr width="35%" align="left"><h1>Tuesday</h1><hr width="35%" align="left">
+       <time>
+      04:20</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+    <time>
+    04:30-05:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    06:30-13:30</time> <font>School</font><input type="radio">
+    <hr>
+    <time>
+    15:30-16:30</time> <font>HomeWorks</font><input type="radio">
+    <hr>
+    <time>
+    16:30-18:30</time> <font>Rest</font><input type="radio">
+    <hr>
+    <time>
+      18:30-19:30</time> <font>Studying Maths</font><input type="radio">
+    <hr>
+    <time>
+    22:00-04:20</time> <font>Sleep</font><input type="radio">
+    <hr>
+  </div>
+  <div class="box shadow3" title="Wednesday">
+       <hr width="35%" align="left"><h1>Wednesday</h1><hr width="35%" align="left">
+    <time>
+    04:20</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+    <time>
+    04:30-05:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    06:30-13:30</time> <font>School</font><input type="radio">
+    <hr>
+    <time>
+    14:30-18:30</time> <font>English Class</font><input type="radio">
+    <hr>
+    <time>
+    22:00-04:20</time> <font>Sleep</font><input type="radio">
+    <hr>
+  </div>
+  <div class="box shadow4" title="Thursnday">
+    <hr width="35%" align="left"><h1>Thursday</h1><hr width="35%" align="left">
+       <time>
+    04:20</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+    <time>
+    04:30-05:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    06:30-13:30</time> <font>School</font><input type="radio">
+    <hr>
+    <time>
+    14:30-18:30</time> <font>Litreture Class</font><input type="radio">
+    <hr>
+    <time>
+    19:00-20:30</time> <font>Studying Litreture</font><input type="radio">
+    <hr>
+    <time>
+    22:00-04:20</time> <font>Sleep</font>
+    <hr>
+      
+    </div>
+  <div class="box shadow5" title="Friday">
+        <hr width="35%" align="left"><h1>Friday</h1><hr width="35%" align="left">
+        <time>
+      04:20</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+    <time>
+    04:30-05:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    06:30-13:30</time> <font>School</font><input type="radio">
+    <hr>
+    <time>
+    15:30-16:30</time> <font>HomeWorks</font><input type="radio">
+    <hr>
+    <time>
+    16:30-18:30</time> <font>Rest</font><input type="radio">
+    <hr>
+    <time>
+    18:30-19:00</time> <font>Studying Sinhala</font><input type="radio">
+    <hr>
+    <time>
+    20:00-21:0<time> <font>Studying Science</font><input type="radio">
+    <hr>
+    <time>
+    22:00-04:20</time> <font>Sleep</font><input type="radio">
+    <hr>
+  </div>
+  <div class="box shadow6" title="Saturday">
+        <hr width="35%" align="left"><h1>Saturday</h1><hr width="35%" align="left">
+    <time>
+    05:00</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+    <time>
+    05:15-06:00</time> <font>Study</font><input type="radio">
+    <hr>
+    <time>
+    07:30-10:00</time> <font>Science Class</font><input type="radio">
+    <hr>
+    <time>
+    10:30-12:30</time> <font>Maths Class</font><input type="radio">
+    <hr>
+    <time>
+    13:30-15:30</time> <font>History Class</font><input type="radio">
+    <hr>
+    <time>
+    21:30-05:00</time>  <font>Wake Up</font><input type="radio">
+    <hr>
+   
+  </div>
+  <div class="box shadow7" title="Sunday">
+        <hr width="35%" align="left"><h1>Sunday</h1><hr width="35%" align="left">
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+    <time>
+    00:00</time>: Sleep
+    <hr>
+  </div>
+    
+</div>
+
+
+</section>
+
+<div class="main">
+  <div class="background-layer"></div>
+  <div class="icontray">
+    <div class="icons">
+      <a href="/profile/index.html"><img src="Assests/home.png" /></a>
+      <a href="/profile/day-plan/index.html"><img src="Assests/calender.png" /></a>
+      <a href="/profile/books/index.html"><img src="Assests/ibook.png" /></a>
+      <a href="/profile/time table/index.html"><img src="Assests/time.png" /></a>
+      <img src="https://assets.codepen.io/2699243/Maps.png" />
+      <img src="https://assets.codepen.io/2699243/Podcast.png" />
+      
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script><script  src="./script.js"></script>
+
+  
+  
+<script>
+  var span = document.getElementById('clock');
+
+function time() {
+  var d = new Date();
+
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+}
+
+setInterval(time, 1000);
+</script>
+  
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
